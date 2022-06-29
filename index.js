@@ -20,7 +20,7 @@ const dbUrl = "mongodb+srv://Abe:node123@cluster0.aseat.mongodb.net/?retryWrites
 mongoose.connect(dbUrl)
 .then((result)=>{
     app.listen(process.env.PORT_NUM || 8000, ()=>{
-        console.log(`App is listening on ${process.env.PORT_NUM}`)
+        console.log(`App is listening on ${process.env.PORT_NUM  || "3000" }`)
     })
 })
 .catch((err)=>{
