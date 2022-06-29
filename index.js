@@ -26,7 +26,7 @@ mongoose.connect(dbUrl)
 .catch((err)=>{
     console.log(err)
 });
-app.get('/', (req, res)=>{
+app.get(' ', (req, res)=>{
     res.send('Now I can sleep, this is working')
 });
 
